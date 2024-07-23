@@ -3,13 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Profile</title>
+  <link rel="stylesheet" href="index.css">
+  <title>Mufaro Fungurayi</title>
 </head>
 <body>
-  <h1><strong>Mufaro Fungurayi</strong> | <em>Software Developer</em></h1>
-  <p>I am a highly disciplined, multifaceted and a self-taught software developer
-    with a huge passion for learning and providing world class software solutions.
-    Other experiences and skills are in marketing, finance, and administration.
-  </p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="container hero">
+        <h1>Mufaro Fungurayi</h1>
+        <h2>Full-Stack Developer</h2>
+        <p>Experienced Software Developer specializing in web and desktop applications.</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate Software Developer with a strong background in web and desktop application development. 
+          I have expertise in various technologies including React, Django, Node.js, and AWS. With a B.Sc. in Computer 
+          Information Systems (Honours) from Africa University, I have honed my skills in building scalable and efficient 
+          solutions for diverse projects.
+        </p>
+        <p>
+          My goal is to create intuitive, user-friendly applications that solve real-world problems. I am always eager to 
+          learn new technologies and improve my skills to stay ahead in this fast-paced industry.
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Languages & Frameworks</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Django</li>
+              <li>Node.js</li>
+              <li>Express</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>APIs</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Database Management</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>System & DevOps</h3>
+            <ul>
+              <li>Linux</li>
+              <li>Bash Scripting</li>
+              <li>DevOps</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Desktop Applications</h3>
+            <ul>
+              <li>Electron</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>System Design</h3>
+            <ul>
+              <li>Architecture Design</li>
+              <li>API Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container project-grid">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Bensco Telematics</h3>
+          <p>A telematics system to track vehicle data and provide analytics.</p>
+          <p>Technologies: Mongo(mongoose), Express, React, Node.js - MERN Stack</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Unite Methodist Church ERP</h3>
+          <p>An ERP system to streamline business operations.</p>
+          <p>Technologies: Electron.js, React, Sequelize, SQLite, Node.js, Express, AWS </p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form onSubmit={handleSubmit}>
+            <div class="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                value=""{formData.message}
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <!-- <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p> -->
+            <!-- <p>Phone: +1234567890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Your LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">Your GitHub</a></p> -->
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mufaro Fungurayi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Mufaro1410" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mufaro-fungurayi-969563119/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
